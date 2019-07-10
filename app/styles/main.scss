@@ -1,6 +1,14 @@
+$function-blue: #569cb3;
+$log-orange: #ce723b;
+
 body, html {
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .jumbotron {
@@ -11,6 +19,7 @@ body, html {
   border-radius: 0;
   display: flex;
   justify-content: center;
+  margin: 0;
   .jumbo-p {
     align-self: center;
     width: 80%;
@@ -19,15 +28,22 @@ body, html {
     text-indent: 1em;
   }
   .function {
-    color: #569cb3;
+    color: $function-blue;
   }
   .log {
-    color: #ce723b;
+    color: $log-orange;
   }
+}
+.section-header {
+  color: $function-blue;
+  text-align: center;
 }
 .about {
   height: 50vh;
+  padding-top: 50px;
 }
 .contact{
   height: 50vh;
 }
+
+@import 'fonts';
