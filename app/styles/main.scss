@@ -133,6 +133,20 @@ h1 {
   }
 }
 
+#contact {
+  margin-bottom: 100px;
+  ul {
+    padding: 0;
+    li {
+      display: inline;
+      margin-right: 20px;
+    }
+    li:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
 .content {
   font-size: 1.5rem;
 }
