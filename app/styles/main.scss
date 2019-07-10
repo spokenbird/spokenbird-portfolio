@@ -20,6 +20,29 @@ h6 {
 h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  padding-top: 50px;
+}
+
+.navbar {
+  background-color: #1e1e1e;
+  .navbar-brand {
+    color: $function-blue;
+    img {
+      margin-right: 20px;
+    }
+  }
+
+  li, .navbar-brand {
+    font-size: 1.5rem;
+
+    a {
+      color: $log-orange;
+    }
+
+    a:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 .jumbotron {
@@ -109,9 +132,11 @@ h1 {
     }
   }
 }
+
 .content {
   font-size: 1.5rem;
 }
+
 .indent {
   text-indent: 1em;
 }
@@ -127,13 +152,6 @@ h1 {
 .section-header {
   color: $function-blue;
   text-align: center;
-}
-
-.about {
-  padding-top: 50px;
-}
-
-.contact {
 }
 
 @import 'fonts';
