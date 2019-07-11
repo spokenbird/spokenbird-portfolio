@@ -28,7 +28,7 @@ h1 {
   .navbar-brand {
     color: $function-blue;
     img {
-      margin-right: 20px;
+      margin: 4px 20px 0 0;
     }
   }
 
@@ -135,6 +135,7 @@ h1 {
 
 #contact {
   margin-bottom: 100px;
+  text-align: center;
   ul {
     padding: 0;
     li {
