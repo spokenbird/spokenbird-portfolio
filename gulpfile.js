@@ -84,6 +84,12 @@ function images() {
     .pipe(dest('dist/images'));
 };
 
+function copy() {
+    return src(['app/assets/**/*', 'app/docs/**/*'], {
+        base: 'app'
+    }).pipe(dest('dist'));
+};
+
 function fonts() {
   return src('app/fonts/**/*.{eot,svg,ttf,woff,woff2}')
     .pipe($.if(!isProd, dest('.tmp/fonts'), dest('dist/fonts')));
@@ -114,7 +120,8 @@ const build = series(
     series(parallel(styles, scripts), html),
     images,
     fonts,
-    extras
+    extras,
+    copy
   ),
   measureSize
 );
