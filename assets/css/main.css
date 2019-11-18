@@ -2829,7 +2829,7 @@ input, select, textarea {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("../../images/code-bg.jpg");
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/overlay1.png"), url("../../images/codes-on-a-screen.jpg");
 			background-size: auto,							cover;
 		}
 
